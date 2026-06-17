@@ -1,0 +1,263 @@
+/* =========================================
+   БАЗОВЫЕ НАСТРОЙКИ И ФОН (Премиум стиль)
+   ========================================= */
+body {
+  background-color: #e9ecef;
+  /* Благородный серебристо-серый фон */
+  color: #2b2b2b;
+  /* Мягкий черный для читаемости */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px 40px;
+  max-width: 1100px;
+  /* Ограничиваем ширину, чтобы сайт не растягивался на весь экран */
+  background-image: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  /* Легкая тень по бокам сайта */
+}
+
+/* =========================================
+   НАВИГАЦИОННОЕ МЕНЮ
+   ========================================= */
+.menu {
+  background-color: #111111;
+  /* Глубокий черный цвет */
+  padding: 15px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  /* Закругленные углы */
+  box-shadow: 0 5px 15px rgba(200, 16, 46, 0.2);
+  /* Легкое красное свечение */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* Расстояние между кнопками */
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  /* Плавная анимация при наведении */
+}
+
+/* Требование: цвет меняется после посещения */
+.menu a:visited {
+  color: #b0a8b9;
+  /* Бледно-фиолетовый/серый для посещенных страниц меню */
+}
+
+.menu a:hover {
+  background-color: #c8102e;
+  /* Фирменный красный цвет AMG при наведении */
+  text-decoration: none;
+  color: white;
+}
+
+/* =========================================
+   ЗАГОЛОВКИ
+   ========================================= */
+h1 {
+  color: #c8102e;
+  /* Красный AMG */
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  /* Требование к шрифту */
+  font-size: 36px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #1a1a1a;
+  font-size: 28px;
+  border-left: 5px solid #c8102e;
+  /* Красная полоска слева от заголовка */
+  padding-left: 15px;
+  margin-top: 40px;
+}
+
+h3 {
+  color: #444444;
+  text-decoration: none;
+  /* Убираем стандартное подчеркивание */
+  border-bottom: 2px dashed #aaaaaa;
+  /* Делаем красивое пунктирное подчеркивание */
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* =========================================
+   ТЕКСТ И ВЫРАВНИВАНИЕ
+   ========================================= */
+p {
+  text-indent: 35px;
+  /* Требование: Абзацный отступ */
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.align-center {
+  text-align: center;
+  text-indent: 0;
+}
+
+.align-right {
+  text-align: right;
+  text-indent: 0;
+  font-style: italic;
+  color: #666;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.large-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+/* Требование: цвет фона и текста */
+.highlight-text {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 6px solid #c8102e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  /* Делаем блоком, чтобы выглядело как цитата */
+}
+
+/* =========================================
+   РАЗДЕЛИТЕЛИ И БЕГУЩАЯ СТРОКА
+   ========================================= */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(200, 16, 46, 0.75), rgba(0, 0, 0, 0));
+  margin: 30px 0;
+}
+
+marquee {
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   РИСУНКИ И ФРЕЙМЫ
+   ========================================= */
+img {
+  border: 5px solid #111111;
+  /* Требование: Рамка к рисунку */
+  border-radius: 12px;
+  max-width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  /* Легкое увеличение фото при наведении */
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border: none;
+  /* Убираем стандартную некрасивую рамку */
+}
+
+/* =========================================
+   ГИПЕРССЫЛКИ (В ТЕКСТЕ И СПИСКАХ)
+   ========================================= */
+a:link {
+  color: #0056b3;
+  /* Классический синий для ссылок */
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+/* Требование: цвет после посещения меняется */
+a:visited {
+  color: #8a2be2;
+  /* Фиолетовый цвет (BlueViolet) - четко видно посещение */
+}
+
+a:hover {
+  color: #c8102e;
+  border-bottom: 1px solid #c8102e;
+  /* Красное подчеркивание при наведении */
+}
+
+/* =========================================
+   ТАБЛИЦА ХАРАКТЕРИСТИК
+   ========================================= */
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  /* Требование: таблица */
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  /* Чтобы углы таблицы были круглыми */
+}
+
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #111111;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Делаем полосатую таблицу для красоты */
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:hover {
+  background-color: #ffeaec;
+  /* Легкая красная подсветка строки при наведении мыши */
+}
+
+/* =========================================
+   СПИСКИ
+   ========================================= */
+ul,
+ol {
+  background-color: #ffffff;
+  padding: 20px 20px 20px 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 10px;
+}
